@@ -1,0 +1,483 @@
+/* =========================================================
+   PAGE
+   ========================================================= */
+
+.case-page {
+  width: min(900px, calc(100% - 40px));
+
+  margin: 0 auto;
+
+  padding: 55px 0 110px;
+
+  color: #292722;
+}
+
+
+/* =========================================================
+   BACK LINK
+   ========================================================= */
+
+.case-back {
+  display: inline-block;
+
+  margin-bottom: 24px;
+
+  font-family: monospace;
+
+  font-size: 9px;
+  font-weight: 600;
+
+  letter-spacing: 0.13em;
+
+  color: #817767;
+
+  text-decoration: none;
+
+  transition: color 150ms ease;
+}
+
+.case-back:hover {
+  color: #3f3a32;
+}
+
+
+/* =========================================================
+   PAPER
+   ========================================================= */
+
+.case-sheet {
+  position: relative;
+
+  background: #fffdf8;
+
+  border: 1px solid #d5cdbf;
+
+  box-shadow:
+    0 15px 40px rgba(52, 45, 35, 0.07);
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.case-header {
+  padding: 42px 55px 38px;
+
+  border-bottom: 1px solid #d9d1c4;
+}
+
+
+.case-header__top {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+
+.case-header__label {
+  font-family: monospace;
+
+  font-size: 9px;
+  font-weight: 600;
+
+  letter-spacing: 0.17em;
+
+  color: #8d8374;
+}
+
+
+.case-status {
+  padding: 5px 9px;
+
+  border: 1px solid #c9c0b1;
+
+  font-family: monospace;
+
+  font-size: 9px;
+  font-weight: 600;
+
+  letter-spacing: 0.1em;
+
+  color: #6e6557;
+}
+
+
+.case-header__rule {
+  height: 1px;
+
+  margin: 18px 0 28px;
+
+  background: #e2dbd0;
+}
+
+
+.case-title {
+  max-width: 760px;
+
+  margin: 0;
+
+  font-family:
+    Georgia,
+    'Times New Roman',
+    serif;
+
+  font-size: 42px;
+
+  font-weight: 400;
+
+  line-height: 1.18;
+
+  letter-spacing: -0.02em;
+
+  color: #282621;
+}
+
+
+.case-excerpt {
+  max-width: 700px;
+
+  margin: 18px 0 0;
+
+  font-family:
+    Georgia,
+    'Times New Roman',
+    serif;
+
+  font-size: 17px;
+
+  line-height: 1.65;
+
+  color: #746d62;
+}
+
+
+/* =========================================================
+   METADATA
+   ========================================================= */
+
+.case-metadata {
+  margin-top: 28px;
+
+  border-top: 1px solid #e1dbd1;
+}
+
+
+.case-metadata__row {
+  display: flex;
+
+  align-items: baseline;
+
+  gap: 25px;
+
+  padding: 10px 0;
+
+  border-bottom: 1px solid #eee9e1;
+}
+
+
+.case-metadata__key {
+  flex: 0 0 105px;
+
+  font-family: monospace;
+
+  font-size: 8px;
+  font-weight: 600;
+
+  letter-spacing: 0.13em;
+
+  color: #968b7c;
+}
+
+
+.case-metadata__value {
+  font-family: monospace;
+
+  font-size: 10px;
+
+  color: #5f584d;
+}
+
+
+.case-complete,
+.case-incomplete {
+  font-family: monospace;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+
+.case-complete {
+  color: #596653;
+}
+
+
+.case-incomplete {
+  color: #886f4d;
+}
+
+
+.case-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 9px;
+}
+
+
+.case-tag {
+  font-family: monospace;
+
+  font-size: 10px;
+
+  color: #71685b;
+}
+
+
+/* =========================================================
+   ARTICLE CONTENT
+   ========================================================= */
+
+.case-content {
+  padding: 45px 55px 65px;
+}
+
+
+.case-loading {
+  font-family: monospace;
+
+  font-size: 9px;
+
+  letter-spacing: 0.12em;
+
+  color: #8e8578;
+}
+
+
+.markdown {
+  font-family:
+    Georgia,
+    'Times New Roman',
+    serif;
+
+  font-size: 17px;
+
+  line-height: 1.75;
+
+  color: #302e29;
+}
+
+
+.markdown p {
+  margin: 0 0 1.35em;
+}
+
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  margin: 1.8em 0 0.65em;
+
+  font-family:
+    Georgia,
+    'Times New Roman',
+    serif;
+
+  font-weight: 400;
+
+  line-height: 1.25;
+
+  color: #27251f;
+}
+
+
+.markdown h1 {
+  font-size: 32px;
+}
+
+
+.markdown h2 {
+  font-size: 27px;
+}
+
+
+.markdown h3 {
+  font-size: 23px;
+}
+
+
+.markdown h4 {
+  font-size: 20px;
+}
+
+
+.markdown strong {
+  font-weight: 600;
+}
+
+
+.markdown em {
+  font-style: italic;
+}
+
+
+/* =========================================================
+   BLOCKQUOTE
+   ========================================================= */
+
+.markdown blockquote {
+  margin: 1.7em 0;
+
+  padding: 4px 0 4px 22px;
+
+  border-left: 2px solid #c6b89e;
+
+  color: #70685c;
+
+  font-style: italic;
+}
+
+
+/* =========================================================
+   LISTS
+   ========================================================= */
+
+.markdown ul {
+  margin: 1em 0 1.4em;
+
+  padding-left: 28px;
+}
+
+
+.markdown li {
+  margin-bottom: 0.35em;
+}
+
+
+/* =========================================================
+   CODE
+   ========================================================= */
+
+.markdown code {
+  padding: 2px 5px;
+
+  background: #f1ede5;
+
+  border: 1px solid #e3ddd3;
+
+  border-radius: 2px;
+
+  font-family: monospace;
+
+  font-size: 0.82em;
+
+  color: #514a40;
+}
+
+
+.markdown pre {
+  overflow-x: auto;
+
+  margin: 1.7em 0;
+
+  padding: 20px;
+
+  background: #292722;
+
+  border: 1px solid #1f1e1b;
+
+  border-radius: 2px;
+}
+
+
+.markdown pre code {
+  padding: 0;
+
+  background: transparent;
+
+  border: none;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+
+  color: #eee9df;
+}
+
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+
+.markdown a {
+  color: #625b4e;
+
+  text-decoration:
+    underline;
+
+  text-decoration-color: #b9ad98;
+
+  text-underline-offset: 3px;
+}
+
+
+.markdown a:hover {
+  color: #28251f;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  .case-page {
+    width: calc(100% - 24px);
+
+    padding-top: 30px;
+  }
+
+
+  .case-header {
+    padding: 30px 24px 28px;
+  }
+
+
+  .case-title {
+    font-size: 32px;
+  }
+
+
+  .case-excerpt {
+    font-size: 15px;
+  }
+
+
+  .case-content {
+    padding: 32px 24px 45px;
+  }
+
+
+  .markdown {
+    font-size: 16px;
+  }
+
+
+  .case-metadata__row {
+    gap: 12px;
+  }
+
+
+  .case-metadata__key {
+    flex-basis: 85px;
+  }
+}

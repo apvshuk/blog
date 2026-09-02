@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Courier+Prime:wght@400;700&display=swap');
+
+:root {
+  /* Color tokens: newsprint + case-file palette */
+  --paper: #ede6d6;
+  --paper-dark: #e3dac4;
+  --manila: #d9c49c;
+  --manila-dark: #c0a876;
+  --manila-shadow: #a88f5f;
+  --ink: #1c1a16;
+  --ink-soft: #4a443c;
+  --ink-faint: #78705f;
+  --red: #a32e27;
+  --red-dark: #7a211c;
+  --line: #c9bfa8;
+
+  /* Type tokens */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Source Serif 4', Georgia, serif;
+  --font-mono: 'Courier Prime', 'Courier New', monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--paper);
+  background-image: radial-gradient(
+    ellipse at top left,
+    rgba(0, 0, 0, 0.03),
+    transparent 60%
+  );
+  color: var(--ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: var(--red);
+  color: var(--paper);
+}

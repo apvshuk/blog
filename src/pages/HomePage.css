@@ -1,0 +1,461 @@
+/* =========================================================
+   PAGE
+   ========================================================= */
+
+.archive {
+  width: min(1050px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 70px 0 120px;
+
+  color: #25231f;
+}
+
+.archive__status {
+  padding-top: 60px;
+
+  font-family: monospace;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+
+  color: #8b8376;
+}
+
+.archive__status--error {
+  color: #9a6259;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.archive-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  padding-bottom: 24px;
+}
+
+.archive-header__eyebrow {
+  margin-bottom: 9px;
+
+  font-family: monospace;
+  font-size: 10px;
+  font-weight: 600;
+
+  letter-spacing: 0.18em;
+
+  color: #8a8172;
+}
+
+.archive-header__title {
+  margin: 0;
+
+  font-family:
+    Georgia,
+    'Times New Roman',
+    serif;
+
+  font-size: 46px;
+  font-weight: 400;
+
+  letter-spacing: -0.025em;
+
+  color: #25231f;
+}
+
+.archive-header__mark {
+  padding-bottom: 5px;
+
+  font-family: monospace;
+  font-size: 10px;
+
+  letter-spacing: 0.12em;
+
+  color: #9a9285;
+}
+
+.archive-header__line {
+  height: 1px;
+
+  background: #cfc7b8;
+}
+
+
+/* =========================================================
+   TREE
+   ========================================================= */
+
+.archive-tree {
+  padding-top: 40px;
+}
+
+
+/* =========================================================
+   FOLDER
+   ========================================================= */
+
+.archive-folder {
+  margin-top: 52px;
+}
+
+.archive-folder:first-child {
+  margin-top: 0;
+}
+
+
+/*
+ * Deeper folders become visually smaller
+ * and slightly more restrained.
+ */
+
+.archive-folder--depth-1 {
+  margin-top: 35px;
+}
+
+.archive-folder--depth-2 {
+  margin-top: 28px;
+}
+
+.archive-folder--depth-3,
+.archive-folder--depth-4 {
+  margin-top: 23px;
+}
+
+
+/* =========================================================
+   FOLDER TAB
+   ========================================================= */
+
+.folder-tab {
+  display: inline-flex;
+  align-items: center;
+
+  min-width: 210px;
+
+  padding: 10px 18px 9px;
+
+  background: #d9c8a5;
+
+  border: 1px solid #bca982;
+  border-bottom: none;
+
+  border-radius: 5px 5px 0 0;
+}
+
+.folder-tab__index {
+  margin-right: 12px;
+
+  font-family: monospace;
+  font-size: 9px;
+
+  color: #827359;
+}
+
+.folder-tab__name {
+  font-family: monospace;
+  font-size: 11px;
+  font-weight: 600;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #514936;
+}
+
+
+/* =========================================================
+   FOLDER BODY
+   ========================================================= */
+
+.folder-body {
+  padding: 25px;
+
+  background: #eee7d9;
+
+  border: 1px solid #bca982;
+  border-radius: 0 5px 5px 5px;
+}
+
+
+/*
+ * Nesting.
+ */
+
+.folder-body>.archive-folder {
+  margin-left: 17px;
+}
+
+
+/* =========================================================
+   NESTED FOLDER PAPER
+   ========================================================= */
+
+.archive-folder--depth-1 .folder-body {
+  background: #f2ede3;
+}
+
+.archive-folder--depth-2 .folder-body {
+  background: #f6f2ea;
+}
+
+.archive-folder--depth-3 .folder-body {
+  background: #faf8f3;
+}
+
+.archive-folder--depth-4 .folder-body {
+  background: #fcfaf7;
+}
+
+
+/* =========================================================
+   FILE
+   ========================================================= */
+
+.archive-file {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  width: 100%;
+
+  margin-top: 10px;
+  padding: 20px 22px;
+
+  box-sizing: border-box;
+
+  background: #fffefa;
+
+  border: 1px solid #d9d2c5;
+
+  color: #25231f;
+
+  text-decoration: none;
+
+  transition:
+    border-color 160ms ease,
+    background 160ms ease,
+    transform 160ms ease;
+}
+
+.archive-file:first-child {
+  margin-top: 0;
+}
+
+.archive-file:hover {
+  background: #ffffff;
+
+  border-color: #aaa08e;
+
+  transform: translateX(3px);
+}
+
+
+/* =========================================================
+   FILE CONTENT
+   ========================================================= */
+
+.archive-file__left {
+  min-width: 0;
+}
+
+.archive-file__topline {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 8px;
+}
+
+.archive-file__type {
+  font-family: monospace;
+  font-size: 8px;
+  font-weight: 600;
+
+  letter-spacing: 0.15em;
+
+  color: #8b806d;
+}
+
+.archive-file__name {
+  overflow: hidden;
+
+  font-family: monospace;
+  font-size: 9px;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  color: #aaa194;
+}
+
+.archive-file__title {
+  margin: 0;
+
+  font-family:
+    Georgia,
+    'Times New Roman',
+    serif;
+
+  font-size: 25px;
+  font-weight: 400;
+
+  line-height: 1.25;
+
+  color: #292722;
+}
+
+.archive-file__excerpt {
+  max-width: 720px;
+
+  margin: 9px 0 0;
+
+  font-family:
+    Georgia,
+    'Times New Roman',
+    serif;
+
+  font-size: 14px;
+
+  line-height: 1.55;
+
+  color: #756e63;
+}
+
+.archive-file__arrow {
+  flex-shrink: 0;
+
+  font-size: 20px;
+
+  color: #8d8373;
+
+  transition:
+    transform 160ms ease;
+}
+
+.archive-file:hover .archive-file__arrow {
+  transform: translate(3px, -3px);
+}
+
+
+/* =========================================================
+   METADATA
+   ========================================================= */
+
+.archive-metadata {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 14px;
+
+  margin-top: 14px;
+}
+
+.archive-metadata__item {
+  display: flex;
+  align-items: baseline;
+
+  gap: 5px;
+
+  font-family: monospace;
+  font-size: 9px;
+
+  color: #756d60;
+}
+
+.archive-metadata__item--complete {
+  color: #596451;
+}
+
+.archive-metadata__key {
+  font-size: 8px;
+  font-weight: 600;
+
+  letter-spacing: 0.1em;
+
+  color: #9a9080;
+}
+
+.archive-metadata__tags {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 7px;
+}
+
+.archive-tag {
+  font-family: monospace;
+  font-size: 9px;
+
+  color: #827768;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+  .archive {
+    width: calc(100% - 28px);
+
+    padding-top: 35px;
+  }
+
+  .archive-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 14px;
+  }
+
+  .archive-header__title {
+    font-size: 36px;
+  }
+
+  .archive-header__mark {
+    padding-bottom: 0;
+  }
+
+  .archive-tree {
+    padding-top: 28px;
+  }
+
+  .folder-body {
+    padding: 14px;
+  }
+
+  .folder-body>.archive-folder {
+    margin-left: 4px;
+  }
+
+  .folder-tab {
+    min-width: 160px;
+  }
+
+  .archive-file {
+    padding: 17px;
+
+    gap: 15px;
+  }
+
+  .archive-file__title {
+    font-size: 20px;
+  }
+
+  .archive-file__excerpt {
+    font-size: 13px;
+  }
+
+  .archive-file__arrow {
+    font-size: 17px;
+  }
+}
