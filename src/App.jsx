@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import Header from './components/Header';
 import HomePage from './pages/HomePage';
 import PostPage from './pages/PostPage';
@@ -22,6 +23,7 @@ export default function App() {
           FILE ARCHIVE // ALL RECORDS UNVERIFIED UNTIL CROSS-CHECKED
         </span>
       </footer>
+      <Analytics />
     </div>
   );
 }
