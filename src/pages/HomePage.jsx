@@ -139,10 +139,6 @@ function RenderTree({
         )}`}
       >
         <div className="folder-tab">
-          <span className="folder-tab__index">
-            {String(depth + 1).padStart(2, '0')}
-          </span>
-
           <span className="folder-tab__name">
             {node.name}
           </span>
