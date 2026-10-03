@@ -12,11 +12,10 @@ export default function Header() {
   return (
     <header className="masthead">
       <div className="masthead__stamp" aria-hidden="true">
-        <span>CLASSIFIED</span>
+        <span>DE...CLASSIFIED</span>
       </div>
 
       <div className="masthead__top">
-        <span className="masthead__mono">EST. FILE NO. 001</span>
         <span className="masthead__mono">{TODAY}</span>
       </div>
 
@@ -24,11 +23,11 @@ export default function Header() {
         <h1 className="masthead__title">THE DAILY DOSSIER</h1>
       </Link>
       <p className="masthead__tagline">
-        Investigative reporting, filed and cross-referenced
+        My readings, experiments, learnings and thoughts
       </p>
 
       <div className="masthead__rule">
-        <span className="masthead__rule-mono">CASE ARCHIVE — OPEN TO PUBLIC RECORD</span>
+        <span >OPEN TO PUBLIC RECORD</span>
       </div>
     </header>
   );
