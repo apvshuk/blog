@@ -74,16 +74,12 @@ export default function HomePage() {
       <header className="archive-header">
         <div>
           <div className="archive-header__eyebrow">
-            PERSONAL ARCHIVE
+            My experiments with life and learnings
           </div>
 
           <h1 className="archive-header__title">
-            Case Files
+           Categories
           </h1>
-        </div>
-
-        <div className="archive-header__mark">
-          BLOG / 001
         </div>
       </header>
 
