@@ -78,7 +78,7 @@ export default function HomePage() {
           </div>
 
           <h1 className="archive-header__title">
-           Categories
+           Folders
           </h1>
         </div>
       </header>
