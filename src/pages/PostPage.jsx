@@ -94,6 +94,10 @@ function markdownToHtml(markdown) {
         '<code>$1</code>'
       )
       .replace(
+        /!\[([^\]]*)\]\(([^)]+)\)/g,
+        '<img src="$2" alt="$1" style="max-width:100%;height:auto;" />'
+      )
+      .replace(
         /\[(.+?)\]\((.+?)\)/g,
         '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>'
       );
@@ -154,6 +158,11 @@ function markdownToHtml(markdown) {
     closeList();
 
     if (line === '') {
+      continue;
+    }
+
+    if (/^!\[[^\]]*\]\([^)]+\)$/.test(line)) {
+      html.push(inline(line));
       continue;
     }
 
