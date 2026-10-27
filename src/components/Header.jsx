@@ -17,8 +17,8 @@ export default function Header() {
 
       <div className="masthead__top">
         <span className="masthead__mono">{TODAY}</span>
-        <span className="masthead__mono"><a href="https://github.com/apvshuk">Github New</a></span>
-        <span className="masthead__mono"><a href="https://github.com/Apoorva-Shukla">Github Old</a></span>
+        <span className="masthead__mono masthead__stamp"><a href="https://github.com/apvshuk">Github New</a></span>
+        <span className="masthead__mono masthead__stamp"><a href="https://github.com/Apoorva-Shukla">Github Old</a></span>
       </div>
 
       <Link to="/" className="masthead__title-link">
