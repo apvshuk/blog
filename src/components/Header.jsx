@@ -22,7 +22,7 @@ export default function Header() {
       </div>
 
       <Link to="/" className="masthead__title-link">
-        <h1 className="masthead__title">THE DAILY DOSSIER</h1>
+        <h1 className="masthead__title">Apoorva Kumar Shukla</h1>
       </Link>
       <p className="masthead__tagline">
         My readings, experiments, learnings and thoughts
