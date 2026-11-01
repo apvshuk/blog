@@ -24,6 +24,7 @@ export default function Header() {
       <Link to="/" className="masthead__title-link">
         <h1 className="masthead__title">Apoorva Kumar Shukla</h1>
       </Link>
+      <img src="https://raw.githubusercontent.com/apvshuk/blog-content/refs/heads/main/.github/images/Screenshot%20From%202026-11-01%2012-37-12.png"></img>
       <p className="masthead__tagline">
         My readings, experiments, learnings and thoughts
       </p>
