@@ -19,7 +19,7 @@ export default function Header() {
         <span className="masthead__mono">{TODAY}</span>
         <span className="masthead__mono"><a href="https://github.com/apvshuk">Github New Profile</a></span>
         <span className="masthead__mono"><a href="https://github.com/Apoorva-Shukla">Github Old Profile</a></span>
-        <img style="border-radius: 100%;" src="https://raw.githubusercontent.com/apvshuk/blog-content/refs/heads/main/.github/images/Screenshot%20From%202026-11-01%2012-37-12.png"></img>
+        <img style="border-radius: 100%;" src="https://raw.githubusercontent.com/apvshuk/blog-content/refs/heads/main/.github/images/Screenshot%20From%202026-11-01%2012-37-12.png">
       </div>
 
       <Link to="/" className="masthead__title-link">
