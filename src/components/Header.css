@@ -90,3 +90,46 @@
     align-items: center;
   }
 }
+
+.masthead__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.masthead__avatar {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.masthead__top .masthead__mono {
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.masthead__top a {
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .masthead__top {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 12px;
+  }
+
+  .masthead__top .masthead__mono {
+    font-size: 10px;
+  }
+
+  .masthead__avatar {
+    width: 36px;
+    height: 36px;
+  }
+}
