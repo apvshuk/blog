@@ -16,14 +16,22 @@ export default function Header() {
       </div>
 
       <div className="masthead__top">
-        <img
-          src="https://raw.githubusercontent.com/apvshuk/blog-content/refs/heads/main/.github/images/profile-picture.png"
-          alt="Profile Picture"
-        />
-        <span className="masthead__mono">{TODAY}</span>
-        <span className="masthead__mono"><a href="https://github.com/apvshuk">Github New Profile</a></span>
-        <span className="masthead__mono"><a href="https://github.com/Apoorva-Shukla">Github Old Profile</a></span>
-      </div>
+  <img
+    className="masthead__avatar"
+    src="https://raw.githubusercontent.com/apvshuk/blog-content/refs/heads/main/.github/images/profile-picture.png"
+    alt="Profile Picture"
+  />
+
+  <span className="masthead__mono">{TODAY}</span>
+
+  <span className="masthead__mono">
+    <a href="https://github.com/apvshuk">Github New Profile</a>
+  </span>
+
+  <span className="masthead__mono">
+    <a href="https://github.com/Apoorva-Shukla">Github Old Profile</a>
+  </span>
+</div>
 
       <Link to="/" className="masthead__title-link">
         <h1 className="masthead__title">Apoorva Kumar Shukla</h1>
