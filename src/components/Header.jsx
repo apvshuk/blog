@@ -18,7 +18,7 @@ export default function Header() {
       <div className="masthead__top">
   <img
     className="masthead__avatar"
-    src="https://raw.githubusercontent.com/apvshuk/blog-content/refs/heads/main/.github/images/profile-picture.png"
+    src="https://avatars.githubusercontent.com/u/294035515?v=4"
     alt="Profile Picture"
   />
 
